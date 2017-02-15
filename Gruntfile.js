@@ -439,7 +439,17 @@ module.exports = function (grunt) {
           cwd: '.',
           src: [
               'bower_components/bootstrap-sass-official/assets/fonts/bootstrap/*',
-              'bower_components/angular-material/angular-material.css'
+              'bower_components/angular-material/angular-material.css',
+               'bower_components/jquery/dist/jquery.js',
+               'bower_components/angular/angular.js',
+               'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js',
+               ' bower_components/angular-resource/angular-resource.js',
+               'bower_components/angular-route/angular-route.js',
+               'bower_components/angular-bootstrap/ui-bootstrap-tpls.js',
+               'bower_components/angular-animate/angular-animate.js',
+                'bower_components/angular-aria/angular-aria.js',
+                'bower_components/angular-messages/angular-messages.js',
+                'bower_components/angular-material/angular-material.js'
                ],
           dest: '<%= yeoman.dist %>'
         }]
