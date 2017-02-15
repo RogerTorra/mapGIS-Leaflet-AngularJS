@@ -492,6 +492,12 @@ module.exports = function (grunt) {
         push: true,
         message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
       },
+      pages: {
+        options: {
+          remote: 'git@github.com:RogerTorra/mapGIS-Leaflet-AngularJS.git',
+          branch: 'gh-pages'
+        }
+      },
       heroku: {
         options: {
           remote: 'https://github.com/RogerTorra/mapGIS-Leaflet-AngularJS.git',
