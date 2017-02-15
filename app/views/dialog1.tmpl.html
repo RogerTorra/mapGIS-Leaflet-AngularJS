@@ -1,0 +1,36 @@
+<md-dialog aria-label="Mango (Fruit)">
+  <form ng-cloak>
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+        <h2>Introduce los datos de tu punto</h2>
+        <span flex></span>
+        <md-button class="md-icon-button" ng-click="cancel()">
+          <i class="glyphicon glyphicon-remove"></i>
+        </md-button>
+      </div>
+    </md-toolbar>
+
+    <md-dialog-content>
+      <div class="md-dialog-content">
+          <label>Nombre</label><input type="text" ng-model="form.name"></input>
+          <label>Descripción</label><input type="text" ng-model="form.desc"></input>   
+          <label>Tipo</label><select ng-model="form.type">
+              <option value="1">Ocio</option>
+              <option value="2">Restauración</option>
+              <option value="3">Punto de interés</option>
+          </select>        
+      </div>
+    </md-dialog-content>
+
+    <md-dialog-actions layout="row">
+      <md-button ng-click="cancel()">
+        Cancelar
+      </md-button>
+      <span flex></span>
+
+      <md-button ng-click="answer(form)">
+        Añadir
+      </md-button>
+    </md-dialog-actions>
+  </form>
+</md-dialog>
