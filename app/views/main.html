@@ -6,6 +6,7 @@
         </button>
         <button type="button" class="btn btn-default" ng-if="vm.editing" ng-click="vm.actionEdit()">Cancel</button>
     </h4>
+    <p>Los datos del mapa son almacenados en la memoria del navegador, si lo abres desde otro sitio recueda que no se cargarán los mismos puntos.</p>
     <div class="panel panel-default" ng-repeat="(key,value) in vm.overlays">
         <div class="panel-heading">
            <h5 class="panel-title">{{key}} 
