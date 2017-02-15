@@ -1,23 +1,10 @@
-/*var gzippo = require('gzippo');
-var express = require('express');
-var app = express();
-var logger = require('morgan');
+'use strict';
 
-app.use(logger('dev'));
-app.use(gzippo.staticGzip("" + __dirname + "/dist"));
-app.listen(3000, function () {
-  console.log('Example app listening on port 5000!')
-});*/
-
+var gzippo = require('gzippo');
 var express = require('express');
 var logger = require('morgan');
-var app = express();
+var nodeApp = express();
 
-app.use(logger('dev'));
-app.use(express.static(__dirname + '/dist'));
-
-app.get('/', function(req, res){
-  res.redirect('/index.html');
-});
-
-app.listen(9000);
+nodeApp.use(logger('dev'));
+nodeApp.use(gzippo.staticGzip('' + __dirname + '/dist'));
+nodeApp.listen(process.env.PORT || 5000);
