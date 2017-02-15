@@ -13,12 +13,16 @@ module.exports = function (grunt) {
   require('time-grunt')(grunt);
 
   // Automatically load required Grunt tasks
-  require('jit-grunt')(grunt, {
+  require('jit-grunt')(grunt,{
     useminPrepare: 'grunt-usemin',
     ngtemplates: 'grunt-angular-templates',
     cdnify: 'grunt-google-cdn'
   });
-
+/*, {
+    useminPrepare: 'grunt-usemin',
+    ngtemplates: 'grunt-angular-templates',
+    cdnify: 'grunt-google-cdn'
+  }*/
  grunt.loadNpmTasks('grunt-build-control');    
   var pkg = require('./package.json');         
     
@@ -493,6 +497,7 @@ module.exports = function (grunt) {
       
   });
 
+  grunt.registerTask('heroku', ['build']);    
 
   grunt.registerTask('serve', 'Compile then start a connect web server', function (target) {
     if (target === 'dist') {

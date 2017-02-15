@@ -1,6 +1,6 @@
 {
   "name": "gismap",
-  "version":"0.0.1",
+  "version": "0.0.1",
   "private": true,
   "devDependencies": {
     "autoprefixer-core": "^5.2.1",
@@ -47,9 +47,13 @@
   },
   "dependencies": {
     "angular-ui-bootstrap": "^2.5.0",
+    "grunt-google-cdn": "^0.4.3",
+    "grunt-angular-templates": "^0.5.7",
+    "grunt-usemin": "^3.0.0",
     "bower": "^1.5.2",
     "express": "^4.14.1",
     "gzippo": "^0.2.0",
+    "jit-grunt": "^0.9.1",
     "morgan": "^1.8.1"
   }
 }
