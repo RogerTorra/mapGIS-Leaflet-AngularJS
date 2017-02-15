@@ -48,6 +48,7 @@
   },
   "dependencies": {
     "angular-ui-bootstrap": "^2.5.0",
+    "grunt-cli": "^1.2.0",
     "grunt-google-cdn": "^0.4.3",
     "grunt-angular-templates": "^0.5.7",
     "grunt-usemin": "^3.0.0",
