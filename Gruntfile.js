@@ -56,8 +56,8 @@ module.exports = function (grunt) {
         tasks: ['newer:jshint:test', 'newer:jscs:test', 'karma']
       },
       compass: {
-        files: ['<%= yeoman.app %>/styles/{,*/}*.{scss,sass}'],
-        tasks: ['compass:server', 'postcss:server']
+       // files: ['<%= yeoman.app %>/styles/{,*/}*.{scss,sass}'],
+       // tasks: ['compass:server', 'postcss:server']
       },
       gruntfile: {
         files: ['Gruntfile.js']
@@ -423,6 +423,7 @@ module.exports = function (grunt) {
             '*.{ico,png,txt}',
             '*.html',
             'scripts/**/*',
+            'styles/**/*',
             'views/**/*',
             'awesome-markers/**/*',
             'images/{,*/}*.{webp}',
@@ -460,7 +461,7 @@ module.exports = function (grunt) {
         'compass'
       ],
       dist: [
-        'compass:dist',
+        //'compass:dist',
         'imagemin',
         'svgmin'
       ]
