@@ -494,7 +494,7 @@ module.exports = function (grunt) {
       },
       pages: {
         options: {
-          remote: 'git@github.com:RogerTorra/mapGIS-Leaflet-AngularJS.git',
+          remote: 'https://github.com/RogerTorra/mapGIS-Leaflet-AngularJS.git',
           branch: 'gh-pages'
         }
       },
